@@ -1,4 +1,4 @@
-package ir.ac.kntu;
+package ir.ac.kntu.logic;
 
 import java.util.ArrayList;
 
