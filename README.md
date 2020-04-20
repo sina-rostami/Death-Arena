@@ -1,6 +1,6 @@
 
 # hw3-Fariborz-in-Quarantine
-[hw3 Fariborz in Quarantine Documentaiton](https://docs.google.com/document/d/1H1k_2Is_pshtb6KgJ_tjcVNOo8BBcSXA_mnDVM62dcc/edit?usp=sharing)
+[tahw7-game Documentaiton](https://docs.google.com/document/d/1H1k_2Is_pshtb6KgJ_tjcVNOo8BBcSXA_mnDVM62dcc/edit?usp=sharing)
 
 
 <ul>
