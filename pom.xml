@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>ir.ac.kntu</groupId>
-    <artifactId>hw6-Game-starter</artifactId>
+    <artifactId>hw7-Game-starter</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <dependencies>

@@ -5,8 +5,10 @@ import ir.ac.kntu.logic.Director;
 import ir.ac.kntu.logic.GraphicsEngine;
 
 public class Main {
-    GraphicsEngine engine = new ConsoleGraphicsEngine(); 
-    Director director = new Director(graphicsEngine); 
+    public static void main(String[] args) {
+        GraphicsEngine engine = new ConsoleGraphicsEngine(); 
+        Director director = new Director(engine); 
+        //TODO: Start your game from here
+    }
     
-    //TODO: Start your game from here
 }
