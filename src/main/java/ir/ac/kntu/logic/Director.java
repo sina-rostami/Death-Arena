@@ -1,11 +1,11 @@
 package ir.ac.kntu.logic;
 
-import java.util.ArrayList;
+import java.util.List;
 
 public class Director {
 
-    private ArrayList<Soldier> groupA;
-    private ArrayList<Soldier> groupB;
+    private List<Soldier> groupA;
+    private List<Soldier> groupB;
 
     private GraphicsEngine graphicsEngine;
 
