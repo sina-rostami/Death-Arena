@@ -17,7 +17,6 @@ public class Director {
     public Director(GraphicsEngine graphicsEngine) {
         //TODO: Intialize soldiers
 
-
         this.graphicsEngine = graphicsEngine;
 
         victoryState = VictoryState.NOT_FINISHED;
