@@ -6,7 +6,7 @@
 <li>
 clone in your computer:
 <br>
-<code>mvn clean test<br> 
+<code>mvn clean test<br>
 git clone your_repo_url<br>
 cd your_repo_dir</code>
 </li>
@@ -20,7 +20,7 @@ run tests from terminal:
 <li>
 push your change to the repository:
 <br> 
-<code>git add .<br> 
+<code>git add .<br>
 git commit -m "commit message"<br>
 git push</code>
 </li>
