@@ -1,15 +1,19 @@
 package ir.ac.kntu.logic;
 
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public interface GraphicsEngine {
 
 
-    public void initialize(ArrayList<Soldier> groupA, ArrayList<Soldier> groupB);
+    void initialize(ArrayList<Soldier> groupA, ArrayList<Soldier> groupB);
 
-    public void visualizeFight(Soldier currentASoldier,Soldier currentBSoldier);
+    void visualizeFight(Soldier currentASoldier, Soldier currentBSoldier);
 
-    public void visualizeDeath();
+    void visualizeDeath();
 
-    public void visualizeVictoryCondition(Director.VictoryState victoryState);
+    void visualizeVictoryCondition(Director.VictoryState victoryState);
+
+    int getSizeOfTeam();
+
 }

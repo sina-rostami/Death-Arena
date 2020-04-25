@@ -3,23 +3,25 @@ package ir.ac.kntu.logic;
 import ir.ac.kntu.util.RandomHelper;
 
 public class SniperRifle extends Gun {
-    private final Caliber caliber;
+
     private final boolean hasScope;
 
     public SniperRifle(Caliber caliber, boolean hasScope) {
-        super();
-        this.caliber = caliber;
+        super(caliber);
+        String name = "SR";
+        if (hasScope) {
+            name += "-Scope";
+        }
         this.hasScope = hasScope;
-        double rand = caliber.getCoefficientOfAccuracy();
+        double rand = 0;
         if (hasScope) {
             rand = RandomHelper.nextInt(15);
             if (rand < 5) {
                 rand = 15 - rand;
             }
             rand = rand / 100;
-            rand = caliber.getCoefficientOfAccuracy() + rand;
         }
-        setGun(rand * 0.5, caliber.getCoefficientOfDamage() * 10);
+        setGun(rand + caliber.getCoefficientOfAccuracy() + 0.6, caliber.getCoefficientOfDamage() + 20, name);
     }
 
 }
