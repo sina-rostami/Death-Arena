@@ -1,8 +1,8 @@
 package ir.ac.kntu.logic;
 
 public class Gun {
-    private double accuracy;
-    private double damage;
+    private int accuracy;
+    private int damage;
     private final Caliber caliber;
     private String name;
 
@@ -10,7 +10,7 @@ public class Gun {
         this.caliber = caliber;
     }
 
-    public void setGun(double accuracy, double damage, String name) {
+    public void setGun(int accuracy, int damage, String name) {
         this.accuracy = accuracy;
         this.damage = damage;
         this.name = name;
@@ -20,18 +20,25 @@ public class Gun {
         return caliber;
     }
 
-    public void setAccuracy(double accuracy) {
+    public void setAccuracy(int accuracy) {
         this.accuracy = accuracy;
     }
 
-    public void setDamage(double damage) {
+    public void setDamage(int damage) {
         this.damage = damage;
     }
 
+    public int getDamage() {
+        return damage;
+    }
+
+    public int getAccuracy() {
+        return accuracy;
+    }
 
     @Override
     public String toString() {
-        return "|Acc@" + Double.toString(accuracy).concat("000").substring(0, 4) + " |Dmg@" + damage +
+        return "|Acc@" + Double.toString(accuracy).concat("000").substring(0, 2) + " |Dmg@" + damage +
                 " |Gun@" + name.concat("      ").substring(0, 8) +
                 " |Cal@" + caliber.toString().concat(" ").substring(0, 5);
     }

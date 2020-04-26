@@ -4,6 +4,6 @@ public class AssaultRifle extends Gun {
 
     public AssaultRifle(Caliber caliber) {
         super(caliber);
-        setGun(caliber.getCoefficientOfAccuracy() + 0.5, caliber.getCoefficientOfDamage() + 10, "AR");
+        setGun(caliber.getCoefficientOfAccuracy() + 50, caliber.getCoefficientOfDamage() + 10, "AR");
     }
 }

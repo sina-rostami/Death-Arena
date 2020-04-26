@@ -8,14 +8,17 @@ import ir.ac.kntu.logic.*;
 
 public final class RandomObjects {
     public static List<Soldier> getRandomSoldiers(int size) {
-        List<Soldier> tempList = new ArrayList<>();
+        ArrayList<Soldier> tempList = new ArrayList<>();
         for (int i = 0; i < size; i++) {
-            tempList.add(getRandomSoldier());
+            tempList.add(newRandomSoldier());
+        }
+        for (int i = 0; i < size; i++) {
+            tempList.get(i).setId(i + 1);
         }
         return new ArrayList<>(tempList);
     }
 
-    public static Soldier getRandomSoldier() {
+    public static Soldier newRandomSoldier() {
         int rand = Math.abs(RandomHelper.nextInt());
         rand %= 7;
         Gun gun;
@@ -44,6 +47,17 @@ public final class RandomObjects {
         }
         rand = Math.abs(RandomHelper.nextInt());
         int health = (rand % 91) + 10;
-        return new Soldier(health, 0, gun);
+        return new Soldier(health, gun.getDamage(), gun);
     }
+
+    public static Soldier getRandomSoldier(ArrayList<Soldier> group) {
+        int random = RandomHelper.nextInt(group.size());
+        Soldier soldier = group.get(random);
+        if (!soldier.isDead()) {
+            return soldier;
+        } else {
+            return getRandomSoldier(group);
+        }
+    }
+
 }
