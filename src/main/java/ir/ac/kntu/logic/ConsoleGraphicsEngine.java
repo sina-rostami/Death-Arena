@@ -56,7 +56,7 @@ public class ConsoleGraphicsEngine implements GraphicsEngine {
                 System.out.println("Soldier A attacks @AccRoll:" + acc1 + " @Failed");
             }
         }
-        System.out.println("\nSoldier B : \n" + currentBSoldier.toString());
+        System.out.println("\n" + currentBSoldier.toString() + "\nSoldier B :");
         System.out.println("$$Arena$$\n");
         printTeam(teamB, currentBSoldier, 2);
         System.out.println("==========================================================");
