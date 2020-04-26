@@ -28,8 +28,8 @@ public class Director {
     }
 
     public void startGameLoop() {
-        //TODO: Add Game Logic Loop here - Graphics also go here
 
+        //TODO: Add Game Logic Loop here - Graphics also go here
     }
 
 

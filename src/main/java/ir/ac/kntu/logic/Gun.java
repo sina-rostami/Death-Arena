@@ -31,7 +31,9 @@ public class Gun {
 
     @Override
     public String toString() {
-        return "|Acc@" + accuracy + " |Dmg@" + damage + " |Gun@" + name + " |Cal@" + caliber;
+        return "|Acc@" + Double.toString(accuracy).concat("000").substring(0, 4) + " |Dmg@" + damage +
+                " |Gun@" + name.concat("      ").substring(0, 8) +
+                " |Cal@" + caliber.toString().concat(" ").substring(0, 5);
     }
 
     public void print() {

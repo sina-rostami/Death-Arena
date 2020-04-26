@@ -18,15 +18,9 @@ public class ConsoleGraphicsEngine implements GraphicsEngine {
     @Override
     public void initialize(ArrayList<Soldier> groupA, ArrayList<Soldier> groupB) {
         System.out.println("Side A : ");
-        for (int i = 0; i < groupA.size(); i++) {
-            Soldier s = groupA.get(i);
-            System.out.println("[ID@" + (i + 1) + " " + s.toString() + " ]");
-        }
+        printTeam(groupA);
         System.out.println("\nSide B : ");
-        for (int i = 0; i < groupB.size(); i++) {
-            Soldier s = groupB.get(i);
-            System.out.println("[ID@" + (i + 1) + " " + s.toString() + " ]");
-        }
+        printTeam(groupB);
     }
     @Override
     public void visualizeFight(Soldier currentASoldier, Soldier currentBSoldier) {
@@ -41,5 +35,12 @@ public class ConsoleGraphicsEngine implements GraphicsEngine {
     @Override
     public void visualizeVictoryCondition(Director.VictoryState victoryState) {
 
+    }
+
+    public void printTeam(ArrayList<Soldier> group) {
+        for (int i = 0; i < group.size(); i++) {
+            Soldier s = group.get(i);
+            System.out.println("[ID@" + (i + 1) + " " + s.toString() + " ]");
+        }
     }
 }
