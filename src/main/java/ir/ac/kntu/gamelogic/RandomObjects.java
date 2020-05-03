@@ -7,7 +7,7 @@ import java.util.*;
 import ir.ac.kntu.logic.*;
 
 public final class RandomObjects {
-    public static List<Soldier> getRandomSoldiers(int size) {
+    public static ArrayList<Soldier> getRandomSoldiers(int size) {
         ArrayList<Soldier> tempList = new ArrayList<>();
         for (int i = 0; i < size; i++) {
             tempList.add(newRandomSoldier());

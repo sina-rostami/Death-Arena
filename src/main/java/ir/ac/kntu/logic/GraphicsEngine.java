@@ -1,7 +1,7 @@
 package ir.ac.kntu.logic;
 
 import java.util.ArrayList;
-import java.util.Scanner;
+
 
 public interface GraphicsEngine {
 

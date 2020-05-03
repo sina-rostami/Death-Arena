@@ -15,19 +15,6 @@ public class Gun {
         this.damage = damage;
         this.name = name;
     }
-
-    public Caliber getCaliber() {
-        return caliber;
-    }
-
-    public void setAccuracy(int accuracy) {
-        this.accuracy = accuracy;
-    }
-
-    public void setDamage(int damage) {
-        this.damage = damage;
-    }
-
     public int getDamage() {
         return damage;
     }
@@ -41,9 +28,5 @@ public class Gun {
         return "|Acc@" + Double.toString(accuracy).concat("000").substring(0, 2) + " |Dmg@" + damage +
                 " |Gun@" + name.concat("      ").substring(0, 8) +
                 " |Cal@" + caliber.toString().concat(" ").substring(0, 5);
-    }
-
-    public void print() {
-        System.out.println(toString());
     }
 }

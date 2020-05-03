@@ -1,7 +1,6 @@
 package ir.ac.kntu.logic;
 
 import java.util.ArrayList;
-import java.util.List;
 
 import ir.ac.kntu.gamelogic.RandomObjects;
 import ir.ac.kntu.util.RandomHelper;
@@ -19,7 +18,6 @@ public class Director {
     private VictoryState victoryState;
 
     public Director(GraphicsEngine graphicsEngine) {
-        //TODO: Intialize soldiers
         this.graphicsEngine = graphicsEngine;
         int size = graphicsEngine.getSizeOfTeam();
         groupA = new ArrayList<>(RandomObjects.getRandomSoldiers(size));

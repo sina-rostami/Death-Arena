@@ -5,7 +5,6 @@ import java.util.*;
 public class ConsoleGraphicsEngine implements GraphicsEngine {
     private int round = 1;
     private Scanner scanner;
-    //TODO: Implement Graphics Options
 
     @Override
     public int getSizeOfTeam() {
