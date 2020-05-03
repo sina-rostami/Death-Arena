@@ -20,29 +20,22 @@ public final class RandomObjects {
 
     public static Soldier newRandomSoldier() {
         int rand = Math.abs(RandomHelper.nextInt());
-        rand %= 7;
-        Gun gun;
+        rand %= 4;
+        Gun gun = null;
         switch (rand) {
-            case 1:
+            case 0:
                 gun = new AssaultRifle(Caliber.FIVE);
                 break;
-            case 2:
+            case 1:
                 gun = new AssaultRifle(Caliber.SEVEN);
                 break;
+            case 2:
+                gun = new SniperRifle(Caliber.FIVE, RandomHelper.nextBoolean());
+                break;
             case 3:
-                gun = new SniperRifle(Caliber.FIVE, false);
-                break;
-            case 4:
-                gun = new SniperRifle(Caliber.FIVE, true);
-                break;
-            case 5:
-                gun = new SniperRifle(Caliber.SEVEN, false);
-                break;
-            case 6:
-                gun = new SniperRifle(Caliber.SEVEN, true);
+                gun = new SniperRifle(Caliber.SEVEN, RandomHelper.nextBoolean());
                 break;
             default:
-                gun = new AssaultRifle(Caliber.FIVE);
                 break;
         }
         rand = Math.abs(RandomHelper.nextInt());

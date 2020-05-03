@@ -4,11 +4,12 @@ import java.util.*;
 
 public class ConsoleGraphicsEngine implements GraphicsEngine {
     private int round = 1;
+    private Scanner scanner;
     //TODO: Implement Graphics Options
 
     @Override
     public int getSizeOfTeam() {
-        Scanner scanner = new Scanner(System.in);
+        scanner = new Scanner(System.in);
         System.out.print("Enter Number Of Soldiers : ");
         int num = scanner.nextInt();
         scanner.close();
